@@ -2,11 +2,24 @@ package main
 
 import "fmt"
 
-func main() {
-	var x int = 10
-	var y float64 = 30.2
-	var sum1 float64 = float64(x) + y
-	var sum2 int = x + int(y)
+const x int64 = 10
 
-	fmt.Println(sum1, sum2)
+const (
+	idKey   = "id"
+	nameKey = "name"
+)
+
+const z = 20 * 10
+
+func main() {
+	const y = "hello"
+
+	fmt.Println(x)
+	fmt.Println(y)
+
+	x = x + 1
+	y = "bye"
+
+	fmt.Println(x)
+	fmt.Println(y)
 }
