@@ -2,24 +2,29 @@ package main
 
 import "fmt"
 
-const x int64 = 10
-
-const (
-	idKey   = "id"
-	nameKey = "name"
-)
-
-const z = 20 * 10
+const value = 10
 
 func main() {
-	const y = "hello"
+	// Exercise 2.1
+	i := 20
+	f := float32(i)
 
-	fmt.Println(x)
-	fmt.Println(y)
+	fmt.Println(i)
+	fmt.Println(f)
 
-	x = x + 1
-	y = "bye"
+	// Exercise 2.2
+	i2 := value
+	f2 := float32(value)
 
-	fmt.Println(x)
-	fmt.Println(y)
+	fmt.Println(i2)
+	fmt.Println(f2)
+
+	// Exercise 2.3
+	var b byte = 255
+	var smallI int32 = 2147483647
+	var bigI uint64 = 18446744073709551615
+
+	fmt.Println(b + 1)
+	fmt.Println(smallI + 1)
+	fmt.Println(bigI + 1)
 }
