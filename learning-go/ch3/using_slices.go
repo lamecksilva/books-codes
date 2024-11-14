@@ -13,5 +13,5 @@ func main() {
 	fmt.Println(smallArray)
 
 	strings()
-	maps()
+	maps_examples()
 }
