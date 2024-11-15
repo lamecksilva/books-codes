@@ -60,3 +60,11 @@ func example_3_11() {
 		fmt.Println("100 is in the set")
 	}
 }
+
+func using_strucsts() {
+	type person struct {
+		name string
+		age  int
+		pet  string
+	}
+}
